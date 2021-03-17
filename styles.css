@@ -1,1 +1,108 @@
-/*Maak hier jouw CSS!*/
+* {
+    /*padding: 0px;*/
+    /*margin: 0px;*/
+}
+
+body {
+    background-color: rgb(255, 239, 219);
+}
+
+.container {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 100px auto min-content 50px;
+    grid-template-areas: "a c c""b c c""b e d""b e d""f f f";
+}
+
+.container div {
+    border: 2px solid rgb(147, 47, 55);
+    color: white;
+    background: rgb(186, 59, 70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a {
+    grid-area: a;
+
+
+}
+
+.b {
+    grid-area: b;
+
+
+}
+
+.c {
+    grid-area: c;
+
+}
+
+.d {
+    grid-area: d;
+    min-height: 100px;
+
+}
+
+.e {
+    grid-area: e;
+
+
+}
+
+.f {
+    grid-area: f;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .container {
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+        grid-template-areas: "a""b""c""d""e"".""f";
+    }
+
+    .container div {
+        border: 2px solid rgb(147, 47, 55);
+        color: white;
+        background: rgb(186, 59, 70);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .a {
+        grid-area: a;
+
+    }
+
+    .b {
+        grid-area: b;
+    }
+
+    .c {
+        grid-area: c;
+    }
+
+    .d {
+        grid-area: d;
+        min-height: unset;
+    }
+
+    .e {
+        grid-area: e;
+    }
+
+    .f {
+        grid-area: f;
+    }
+
+}
