@@ -1,7 +1,3 @@
-* {
-    /*padding: 0px;*/
-    /*margin: 0px;*/
-}
 
 body {
     background-color: rgb(255, 239, 219);
@@ -12,7 +8,11 @@ body {
     grid-gap: 16px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 100px auto min-content 50px;
-    grid-template-areas: "a c c""b c c""b e d""b e d""f f f";
+    grid-template-areas:    "a c c"
+                            "b c c"
+                            "b e d"
+                            "b e d"
+                            "f f f";
 }
 
 .container div {
@@ -26,40 +26,30 @@ body {
 
 .a {
     grid-area: a;
-
-
 }
 
 .b {
     grid-area: b;
-
-
 }
 
 .c {
     grid-area: c;
-
 }
 
 .d {
     grid-area: d;
     min-height: 100px;
-
 }
 
 .e {
     grid-area: e;
-
-
 }
 
 .f {
     grid-area: f;
-
 }
-
-
-@media only screen and (max-width: 600px) {
+/*414*/
+@media only screen and (max-width: 420px) {
 
 
     .container {
@@ -80,8 +70,7 @@ body {
     }
 
     .a {
-        grid-area: a;
-
+        grid-area: a
     }
 
     .b {
